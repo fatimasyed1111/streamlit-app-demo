@@ -18,37 +18,3 @@ st.sidebar.write("Office Hours: By Appointment")
 st.subheader("About This Class")
 st.write("This class focuses on practical applications of AI and data science tools, including the use of platforms like Streamlit for project deployment.")
 
-# Insert containers separated into tabs:
->>> tab1, tab2 = st.tabs(["Tab 1", "Tab2"])
->>> tab1.write("this is tab 1")
->>> tab2.write("this is tab 2")
-
-st.area_chart(df)
-st.bar_chart(df)
-st.bar_chart(df, horizontal=True)
-st.line_chart(df)
-st.map(df)
-st.scatter_chart(df)
-
-st.altair_chart(chart)
-st.bokeh_chart(fig)
-st.graphviz_chart(fig)
-st.plotly_chart(fig)
-st.pydeck_chart(chart)
-st.pyplot(fig)
-st.vega_lite_chart(df, spec)
-
-# Work with user selections
-event = st.plotly_chart(
-    df,
-    on_select="rerun"
-)
-event = st.altair_chart(
-    chart,
-    on_select="rerun"
-)
-event = st.vega_lite_chart(
-    df,
-    spec,
-    on_select="rerun"
-)
