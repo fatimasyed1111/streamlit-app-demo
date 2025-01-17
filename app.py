@@ -28,4 +28,5 @@ col1, col2, col3 = st.columns([3,1,1])
 
 # Using 'with' notation:
 with col1:
->>>     st.write('This is column 1')
+    st.write('This is column 1')
+
