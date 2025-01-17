@@ -27,5 +27,5 @@ col1, col2, col3 = st.columns([3,1,1])
 # col1 is wider
 
 # Using 'with' notation:
->>> with col1:
+with col1:
 >>>     st.write('This is column 1')
